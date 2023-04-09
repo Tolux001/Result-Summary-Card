@@ -16,7 +16,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Overview
 
-<b> Scored in Google page insight</b>
+<b> **Scored 100% in Google page insight** </b>
 
 ![Google-page-insight-score](design/page-speed.png.jpg)
 
