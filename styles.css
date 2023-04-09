@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+    font-display: swap;
+}
+/*Variable Declaration*/
+
+:root {
+    /*Font family*/
+    --Fontfamily: 'Hanken Grotesk';
+
+    /* Colors*/
+
+    /* Primary*/
+    --Lightred: hsla(0, 100%, 67%, 0.1);
+    --Orangeyyellow: hsla(39, 100%, 56%, 0.1);
+    --Greenteal: hsla(166, 100%, 37%, 0.1);
+    --Cobaltblue: hsla(234, 85%, 45%, 0.1);
+
+    /*Gradients*/
+    --Lightslateblue: hsl(252, 100%, 67%);/*bgc in section one*/
+    --Lightroyalblue: hsla(241, 81%, 54%, 0.9);/*bgc in section one*/
+
+    --Violetblue: hsla(256, 72%, 46%, 1);/*circle in section one*/
+    --Persianblue: hsl(241, 77%, 71%);/*circle in section one*/
+
+    /* Neutral*/
+    --White: hsl(0, 0%, 100%);/*section two bground && heading color*/
+    --Paleblue: hsl(221, 100%, 96%); /* Body bgcolor*/
+    --Lightlavender: hsl(241, 100%, 89%);/*paragraph color*/
+    --Darkgrayblue: hsl(224, 30%, 27%);/*section two btn*/
+}
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    padding: 15px 0;
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+.attribution a {color: hsl(228, 45%, 44%);}
+body {
+    overflow: auto;
+    background-color: var(--Paleblue);
+    font-family: var(--Fontfamily);
+}
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 495px;
+    max-width: 95%;
+    border-radius: 20px;
+    background-color: var(--White);
+    box-shadow: 1px 1px 8px 3px var(--Lightlavender);
+}
+.section {
+    display: flex;
+    flex-direction: row;
+}
+.section-one {
+    /*For browser that doesn't support radial gradieent in background image*/
+    background-color: var(--Lightroyalblue);
+    /*For browser that does support radial gradieent in background image*/
+    background-image: linear-gradient(to bottom, var(--Lightslateblue), var(--Lightroyalblue)); 
+    border-radius: 20px;
+    flex: 50%;
+    text-align: center;
+    padding: 20px 30px;
+}
+.section-one .paragraph {
+    color: var(--Lightlavender);
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.percentage-circle {
+    border-radius: 50%;
+    margin: 25px 30px;
+    padding: 30px;
+    box-shadow: 1px 5px 5px var(--Lightroyalblue);
+    background-color: var(--Violetblue);
+    background-image: linear-gradient(to bottom, var(--Violetblue), var(--Persianblue));
+}
+.percentage-circle h1 {
+    color: var(--White);
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+.percentage-circle p {
+    color: var(--Lightlavender);
+    font-size: 11px;
+}
+.section-one h2 {
+    color: var(--White);
+    font-weight: 500;
+}
+.section-one p {
+    color: var(--Lightlavender);
+    margin-top: 7px;
+    font-size: 14px;
+
+}
+.section-two {
+    flex: 50%;
+    padding: 20px;
+}
+.section-two h3 {
+    color: var(--Darkgrayblue);
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.c-component {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 7px 10px;
+}
+.red {background-color: var(--Lightred);}
+.yellow {background-color: var(--Orangeyyellow);}
+.teal {background-color: var(--Greenteal);}
+.blue {background-color: var(--Cobaltblue);}
+.right {
+    text-align: right;
+    opacity: 0.6;
+}
+.right span {
+    opacity: 1;
+    font-weight: 800;
+}
+.btn-btn {
+    background-color: var(--Darkgrayblue);
+    width: 100%;
+    color: var(--White);
+    margin-top: 10px;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 20px;
+    border: none;
+}
+.btn-btn:hover {
+    cursor: pointer;
+    background-color: var(--Lightroyalblue);
+}
+@media(max-width:425px){
+    .section {
+        display: block;
+    }
+    .percentage-circle {
+        margin: 25px 45px;
+    }
+}
