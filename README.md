@@ -18,7 +18,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 <b> Scored in Google page insight</b>
 
-![Google page insight score]()
+![Google page insight score](design/page-speed.png)
 
 [Google Page Insight](https://pagespeed.web.dev/analysis/https-result-card-component-netlify-app/wepl6ckf24?form_factor=desktop)
 
