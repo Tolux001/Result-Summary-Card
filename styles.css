@@ -39,9 +39,8 @@
     font-size: 11px;
     text-align: center; 
     width: 100%;
-    bottom: 0;
-    position: fixed;
-    padding: 15px 0;
+    bottom: 5;
+    padding: 25px 0;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
 }
