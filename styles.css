@@ -63,7 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 495px;
-    max-width: 95%;
+    max-width: 100%;
     border-radius: 20px;
     background-color: var(--White);
     box-shadow: 1px 1px 8px 3px var(--Lightlavender);
@@ -73,7 +73,7 @@ body {
     flex-direction: row;
 }
 .section-one {
-    /*For browser that doesn't support radial gradieent in background image*/
+    /*For browser that doesn't support radial gradient in background image*/
     background-color: var(--Lightroyalblue);
     /*For browser that does support radial gradieent in background image*/
     background-image: linear-gradient(to bottom, var(--Lightslateblue), var(--Lightroyalblue)); 
@@ -161,6 +161,9 @@ body {
         display: block;
     }
     .percentage-circle {
-        margin: 25px 45px;
+        margin: 25px 48px;
     }
+    .section-one {
+        border-radius: 0 0 20px 20px;
+     }
 }
