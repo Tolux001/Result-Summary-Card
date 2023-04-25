@@ -72,7 +72,7 @@ json data
 
 ## Author
 
-- Website - [Toluwalase](https://www.linkedin.com/in/adejuwon-toluwalase-660580234)
+- Website - [Toluwalase](https://www.linkedin.com/in/tolux)
 
 - Frontend Mentor - [@Tolux001](https://www.frontendmentor.io/profile/Tolux001)
 
